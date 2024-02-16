@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_bottom"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+                />
+
+            <TextView
+                android:id="@+id/textViewTitleTopic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="Favorite"
+                android:textColor="@color/cookie"
+                android:textSize="28sp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/heart_header"
+                android:drawablePadding="10dp"/>
+
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollViewFavoriteVocabulary"
+            android:layout_width="match_parent"
+            android:background="@color/background"
+            android:paddingHorizontal="15dp"
+            android:paddingBottom="30dp"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFavoriteVocabulary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

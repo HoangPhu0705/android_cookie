@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737751788698",
+    "project_id": "cookiedemo-48af5",
+    "storage_bucket": "cookiedemo-48af5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737751788698:android:a5f163ee8a69809c06c323",
+        "android_client_info": {
+          "package_name": "tdtu.edu.cookie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVhy18P8cqRFW2SYqkVfhFjPw991PDtcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

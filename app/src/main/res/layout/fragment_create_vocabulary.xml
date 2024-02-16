@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbg"
+    android:fitsSystemWindows="true"
+    tools:context=".UI.Fragment.CreateVocabularyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_bottom"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+
+
+            >
+
+            <TextView
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hủy"
+                android:textColor="@color/cookie"
+                android:fontFamily="@font/inter"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Tạo từ vựng"
+                android:textColor="@color/cookie"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Tiếp"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/cookie"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?attr/textInputFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                android:fontFamily="@font/inter"
+                app:boxStrokeColor="@color/cookie"
+                app:helperText="TỪ VỰNG"
+                app:helperTextTextColor="@color/gray_light"
+
+              >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextVocabulary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:focusedByDefault="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?attr/textInputFilledStyle"
+                android:id="@+id/textInputLayoutDefinition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray_light"
+                app:boxBackgroundColor="@color/white"
+                android:fontFamily="@font/inter"
+                app:endIconMode="custom"
+                app:endIconTint="@color/gray_light"
+                app:endIconDrawable="@drawable/baseline_camera_alt_24"
+
+                app:boxStrokeColor="@color/cookie"
+                app:helperText="ĐỊNH NGHĨA"
+                app:helperTextTextColor="@color/gray_light"
+                app:hintTextColor="@color/cookie">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextDefinition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButton"
+                style="Widget.Material3.MaterialButtonToggleGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/buttonVerb"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:text="Verb"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/coffee"
+                    android:textSize="12sp"
+                    />
+
+                <Button
+                    android:id="@+id/buttonNoun"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:text="Noun"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/buttonAdj"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:text="Adj"
+                    android:fontFamily="@font/inter"
+
+                    android:textColor="@color/green"
+
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/buttonAdv"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/inter"
+                    android:maxWidth="100dp"
+                    android:text="Adv"
+                    android:textColor="#1357C3"
+                    android:textSize="12sp"
+
+                    />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="0dp"
+                android:layout_gravity="center"
+                app:cardElevation="0dp"
+                android:layout_marginTop="20dp"
+                app:strokeWidth="0dp"
+                android:backgroundTint="@color/white"
+                >
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"></LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

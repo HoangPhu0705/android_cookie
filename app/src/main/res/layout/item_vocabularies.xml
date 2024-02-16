@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardViewVocabulary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    android:elevation="0dp"
+    android:layout_marginTop="10dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    >
+    <RelativeLayout
+        android:id="@+id/viewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:paddingHorizontal="20dp">
+
+
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="TODO"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="DELETE"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            />
+
+        <ImageView
+            android:id="@+id/deleteIconLeft"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="TODO"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/viewForeground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+
+
+            <TextView
+                android:id="@+id/textViewWord"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_semibold"
+                android:text="supplier"
+                android:textColor="@color/cookie"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:id="@+id/imageViewSpeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_volume_up_24"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/textViewWordForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="noun"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                android:textColor="@color/gray_light"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/inter"
+                />
+
+            <TextView
+                android:id="@+id/textViewSpelling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/səˈplaɪ.ɚ/"
+                android:textColor="@color/gray_light"
+                android:fontFamily="@font/inter"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewMeaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nhà cung cấp"
+            android:fontFamily="@font/inter"
+
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="06 Oct 2023"
+                android:textColor="@color/coffee"
+                android:layout_marginEnd="5dp"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/inter"
+
+                android:layout_weight="1"/>
+
+            <com.varunest.sparkbutton.SparkButton
+                android:id="@+id/heartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:sparkbutton_activeImage="@drawable/heart_active"
+                app:sparkbutton_inActiveImage="@drawable/heart"
+                app:sparkbutton_iconSize="20dp"
+                android:layout_marginEnd="5dp"
+        />
+
+
+            <ImageView
+                android:id="@+id/topicButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_bookmark_24"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/topics"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_ios_share_24"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:focusable="true"
+                android:contentDescription="@string/share" />
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Đang học"
+            android:layout_weight="0.3"
+            android:fontFamily="@font/inter"
+
+            android:textSize="12sp"/>
+        <ProgressBar
+            android:id="@+id/progressBarStatus"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            />
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

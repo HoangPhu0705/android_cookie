@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Cookie" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowTranslucentStatus">true</item>
+<item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+    <style name="TextAppearance.Material3.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.Cookie" parent="Base.Theme.Cookie" />
+    
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+
+    </style>
+    <style name="ShapeAppearanceOverlay.MyApp.ExtendedFab" parent="">
+        <!-- Define the properties for your style here -->
+        <item name="cornerFamily">rounded</item>
+    </style>
+    <style name="Dialog">
+        <item name="android:windowBackground">@drawable/empty_back</item>
+        <item name="windowMinWidthMajor">80%</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

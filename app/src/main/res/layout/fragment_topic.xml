@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_bottom"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+                />
+
+            <EditText
+                android:id="@+id/textViewTitleTopic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="Topics"
+                android:textColor="@color/cookie"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageViewAddToFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_create_new_folder_24_scrolled"/>
+            <TextView
+                android:id="@+id/textViewEditTopicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sửa"
+                android:layout_gravity="center"
+                android:textColor="@color/cookie"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter"/>
+
+            <Switch
+                android:id="@+id/switchPublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollViewTopic"
+            android:layout_width="match_parent"
+            android:background="@color/background"
+            android:paddingHorizontal="15dp"
+            android:paddingBottom="30dp"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewVocabularyWithTopic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+             />
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

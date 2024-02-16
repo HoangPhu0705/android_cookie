@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_primary">#040404</color>
+    <color name="cookie">#7F5323</color>
+    <color name="green">#698269</color>
+    <color name="creampie">#FEF5E7</color>
+    <color name="coffee">#B99B6B</color>
+    <color name="gray_light">#9A9A9A</color>
+    <color name="background">#F0F0F0</color>
+    <color name="header_background">#F7F7F7</color>
+    <color name="red">#AA5656</color>
+    <color name="text_edit">#474747</color>
+    <color name="purple">#939BFF</color>
+    <color name="forest">#228B22</color>
+
+
+
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cookie</string>
+    <string name="signin">Đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm_new_password">Xác nhận mật khẩu mới</string>
+    <string name="signup">Đăng ký</string>
+    <string name="confirmpassword">Xác nhận mật khẩu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="topics">topics</string>
+    <string name="share">share</string>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_bottom"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter"
+                android:text="Hủy"
+                android:textColor="@color/cookie"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Từ vựng"
+                android:textColor="@color/cookie"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editVocabulary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter"
+                android:text="Tiếp"
+                android:textColor="@color/cookie"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/white"
+                android:elevation="0dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/editTextWord"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="hello"
+                                android:textColor="@color/text_edit"
+                                android:textSize="22sp" />
+
+
+                            <EditText
+                                android:id="@+id/editTextSpelling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/inter"
+                                android:text="/səˈplaɪ.ɚ/"
+                                android:textColor="@color/text_edit"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewEdit"
+                            android:clickable="true"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="5dp"
+                            android:backgroundTint="@color/black_transparent"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginEnd="5dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:id="@+id/imageViewEdit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/baseline_edit_note_24" />
+                            <ImageView
+                                android:id="@+id/imageViewEditOff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/baseline_edit_off_24"
+                                android:visibility="invisible"/>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:id="@+id/toggleButtonEdit"
+                        style="Widget.Material3.MaterialButtonToggleGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        app:selectionRequired="true"
+                        app:singleSelection="true">
+
+                        <Button
+                            android:id="@+id/buttonVerbEdit"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/inter"
+                            android:text="Verb"
+
+                            android:textColor="@color/coffee"
+                            android:textSize="12sp"
+
+                            />
+
+                        <Button
+                            android:id="@+id/buttonNounEdit"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/inter"
+                            android:text="Noun"
+                            android:textColor="@color/red"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/buttonAdjEdit"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/inter"
+                            android:text="Adj"
+
+                            android:textColor="@color/green"
+
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/buttonAdvEdit"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/inter"
+                            android:maxWidth="100dp"
+                            android:text="Adv"
+                            android:textColor="#1357C3"
+                            android:textSize="12sp"
+
+                            />
+
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter"
+                        android:text="Định nghĩa"
+                        android:textColor="@color/gray_light"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/editTextDefinition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Xin chào"
+                        android:focusable="false"
+                        android:textColor="@color/text_edit"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter"
+                        android:text="Ví dụ"
+                        android:textColor="@color/gray_light"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/editTextExample"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Say hello to my little friend."
+                        android:textColor="@color/text_edit"
+
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewChangePhoto"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/gray_light"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/textViewChangePhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:drawableEnd="@drawable/baseline_camera_alt_24"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/inter"
+                        android:text="Đổi ảnh"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="390dp"></LinearLayout>
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
